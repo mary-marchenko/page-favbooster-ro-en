@@ -1,0 +1,53 @@
+@import "../var"
+
+picture
+  &.en
+    display: inline-block
+  &.hr
+    display: none
+
+.fav-page.en
+  .welcome
+    &__txt
+      max-width: 420px
+      @media screen and (max-width: 1344px)
+        max-width: 350px
+      @media screen and (max-width: 750px)
+        max-width: 280px
+  .drop
+    summary
+      @media screen and (max-width: 365px)
+        font-size: 17px
+  .info
+    &__cont
+      @media screen and (min-width: 1051px)
+        gap: 23px
+      @media screen and (max-width: 600px)
+        gap: 27px
+    &__item
+      &-arrows
+        @media screen and (min-width: 1051px)
+          right: -18px
+        @media screen and (max-width: 600px)
+          top: 20px
+      &-center
+        @media screen and (max-width: 600px)
+          max-width: 300px
+      &-bottom
+        @media screen and (max-width: 600px)
+          max-width: 83px
+    &__item
+      &-top
+        @media screen and (max-width: 750px)
+          left: 50%
+        @media screen and (max-width: 600px)
+          left: 59%
+      &-arrows
+        @media screen and (max-width: 750px)
+          right: 47%
+        @media screen and (max-width: 600px)
+          right: 36%
+
+
+
+

@@ -1,0 +1,396 @@
+.hide
+  display: none !important
+
+body.light
+  background: $bg-blue
+
+body
+  overscroll-behavior: none
+  -webkit-tap-highlight-color: transparent
+  background: $bg-blue
+  img
+    max-width: 100%
+    height: auto
+  & > *
+    font-family: inherit
+
+.fav-page
+  display: flex
+  flex-direction: column
+  align-items: center
+  overflow: hidden
+  gap: 45px
+  background: url("../img/bg-desc.png") no-repeat 70% -30px/contain
+  background-size: 1209px auto
+  background-color: $bg-blue
+  @media screen and (max-width: 1585px)
+    background: url("../img/bg-desc.png") no-repeat 80% -30px/contain
+    background-size: 1209px auto
+    background-color: $bg-blue
+  @media screen and (max-width: 1344px)
+    background: url("../img/bg-desc.png") no-repeat 100% -45px/contain
+    background-size: 1100px auto
+    background-color: $bg-blue
+  @media screen and (max-width: 1050px)
+    gap: 10px
+    background: url("../img/bg-tab.png") no-repeat 100% -150px/contain
+    background-size: 850px auto
+    background-color: $bg-blue
+  @media screen and (max-width: 600px)
+    background: url("../img/bg-mob.png") no-repeat 50% -190px/contain
+    background-size: 550px auto
+    background-color: $bg-blue
+  @media screen and (max-width: 380px)
+    background: url("../img/bg-mob.png") no-repeat 50% -110px/contain
+    background-size: 380px auto
+    background-color: $bg-blue
+  .cont
+    width: 1216px
+    margin: 0 auto
+  .btn
+    min-width: 180px
+    height: 50px
+    max-width: max-content
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $green
+    border-radius: 6px
+    color: $blue
+    text-transform: uppercase
+    font-family: $font-robotoCondensed-bold
+    font-size: 18px
+    transition: background .3s ease-in-out
+    padding: 0 10px
+    &:hover,
+    &:active
+      background-color: $green-hover
+  .welcome
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 50px
+    position: relative
+    &__left
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+    &__right
+      position: relative
+      margin-right: 50px
+    &__phone
+      width: 447px
+      height: auto
+      transform: rotate(6.489deg)
+    &__title
+      white-space: nowrap
+      color: $white
+      font-family: $font-favbetDisplay-bold
+      font-size: 82px
+      line-height: 82px
+      text-transform: uppercase
+      margin-bottom: 15px
+      span
+        font-size: 60px
+        line-height: 60px
+
+    &__txt
+      max-width: 557px
+      font-family: $font-robotoCondensed-regular
+      font-size: 18px
+      line-height: 18px
+      color: $white
+      margin-bottom: 50px
+      span
+        font-family: $font-robotoCondensed-bold
+    &__decor
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      &-item
+        position: absolute
+        height: auto
+        &.buts
+          bottom: 120px
+          left: -118px
+          width: 129px
+          animation: float 3s ease-in-out infinite
+        &.box
+          top: 150px
+          left: -149px
+          width: 185px
+          animation: float 4s ease-in-out infinite
+        &.ball
+          top: -30px
+          left: -84px
+          width: 175px
+          animation: float 5s ease-in-out infinite
+        &.tennis
+          right: -113px
+          top: -81px
+          width: 220px
+          animation: float 2s ease-in-out infinite
+        &.football
+          right: -94px
+          bottom: 119px
+          width: 131px
+          animation: float 3s ease-in-out infinite
+  .info
+    z-index: 2
+    margin: -230px 0 -12px 0
+    display: flex
+    flex-direction: column
+    gap: 32px
+    &__title
+      white-space: nowrap
+      color: $white
+      font-family: $font-favbetDisplay-bold
+      font-size: 38px
+      text-transform: uppercase
+    &__cont
+      border-radius: 17px
+      display: flex
+      align-items: center
+      justify-content: center
+      gap: 12px
+      width: 1216px
+      height: 166px
+      background: url("../img/bonus-bg-desc.jpg") no-repeat 0 0/cover
+      background-size: 100% 100%
+      @media screen and (max-width: 1050px)
+        background: url("../img/bonus-bg-tab.jpg") no-repeat 0 0/cover
+        background-size: 100% 100%
+      @media screen and (max-width: 600px)
+        background: url("../img/bonus-bg-mob.jpg") no-repeat 0 0/cover
+        background-size: 100% 100%
+    &__item
+      max-width: 150px
+      width: fit-content
+      position: relative
+      gap: 8px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      &-top
+        display: flex
+        gap: 8px
+        justify-content: center
+        align-items: center
+        height: 30px
+        padding: 0 15px
+        background: url("../img/bg-magenta.png") no-repeat 0 0/cover
+        background-size: 100% 100%
+      &-img
+        width: 16px
+        height: 16px
+      &-procent
+        font-family: $font-favbetDisplay-medium
+        color: $white
+        font-size: 24px
+        text-transform: uppercase
+      &-center
+        text-align: center
+        font-family: $font-favbetDisplay-medium
+        color: $white
+        font-size: 20px
+        line-height: 24px
+        text-transform: uppercase
+      &-bottom
+        font-family: $font-robotoCondensed-regular
+        color: $white-opacity
+        font-size: 14px
+      &-arrows
+        position: absolute
+        top: 8px
+        right: -12px
+        gap: 2px
+        display: flex
+        opacity: 0
+        animation: moveArrowRight 1.6s infinite ease-in-out
+        .arrow
+          width: 9.5px
+          height: auto
+    &__btn
+      display: none
+  .fiq
+    width: 750px
+  .drop
+    max-width: 750px
+    width: 100%
+    margin: 0 auto 41px
+    position: relative
+    z-index: 5
+    transition: all .4s ease-in-out
+    @media screen and (max-width: 600px)
+      margin: 0 auto 25px
+    .dropdown[open]
+      summary
+        position: relative
+        color: $gray
+        background-size: 100% 100%
+        &:before
+          transform: rotate(180deg)
+    summary::-webkit-details-marker
+      display: none
+      > summary
+        list-style: none
+    summary
+      transition: all .4s ease-in-out
+      height: 33px
+      list-style: none
+      font-family: $font-robotoCondensed-bold
+      font-size: 18px
+      cursor: pointer
+      background-size: 100% 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      color: $gray
+      &::before
+        content: ""
+        display: block
+        min-width: 12px
+        height: 12px
+        background: url("../img/arrow.svg") no-repeat 0 0/contain
+        order: 2
+      &:after
+        content: ""
+        position: absolute
+        left: 0
+        bottom: -2px
+        width: 100%
+        height: 1px
+        background-color: $gray-line
+    &-txt
+      padding: 25px 23px 0 0
+      margin-top: 5px
+      @media screen and (max-width: 600px)
+        padding: 5px 13px 0 0
+      &-list
+        display: flex
+        flex-direction: column
+        gap: 12px
+        font-family: $font-robotoCondensed-regular
+        color: $gray
+        font-size: 16px
+        line-height: 26px
+        p, a
+          font-family: $font-robotoCondensed-regular
+          color: $gray
+          font-size: 16px
+          line-height: 26px
+          @media screen and (max-width: 1050px)
+            font-size: 12px
+            line-height: 18px
+        .strong, strong
+          font-family: $font-robotoCondensed-bold
+          @media screen and (max-width: 1050px)
+            font-size: 12px
+            line-height: 18px
+        span
+          font-family: $font-robotoCondensed-bold
+          color: $gray
+        tr,td
+          font-family: $font-robotoCondensed-regular
+          color: $gray
+          @media screen and (max-width: 600px)
+            font-size: 12px
+        td
+          padding-left: 5px
+    &._rules
+      .drop-txt
+        padding: 15px
+        margin-top: 10px
+        &-inner
+          padding-right: 5px
+          max-height: 360px
+          overflow-y: auto
+          scrollbar-width: auto
+          &::-webkit-scrollbar-thumb
+            background: $green
+            width: 3px
+            border-radius: 3px
+          &::-webkit-scrollbar
+            background: transparent
+            width: 3px
+
+//content styles
+.popup
+  //.magenta
+  //  font-family: inherit
+  //  color: $magenta
+.retreat1
+  padding-left: 20px
+  strong
+    font-family: $font-robotoCondensed-bold
+    color: $white
+
+.retreat2
+  padding-left: 40px
+  strong
+    font-family: $font-robotoCondensed-bold
+    color: $white
+
+.circle
+  padding-left: 20px
+  &:before
+    content: ''
+    width: 5px
+    height: 5px
+    background: $white
+    border-radius: 50%
+    display: inline-block
+    margin: 0 8px 3px 0
+
+@media screen and (max-width: 600px)
+  .circle
+    padding-left: 15px
+  .retreat1
+    padding-left: 15px
+  .retreat2
+    padding-left: 30px
+
+//end contents styles
+
+@keyframes moveArrowRight
+  0%
+    transform: translateX(0)
+    opacity: 0
+  20%
+    opacity: 1
+  50%
+    transform: translateX(10px)
+    opacity: 1
+  80%
+    opacity: 0
+  100%
+    transform: translateX(15px)
+    opacity: 0
+
+
+@keyframes float
+  0%
+    transform: translateY(0)
+  50%
+    transform: translateY(-15px)
+  100%
+    transform: translateY(0)
+
+@keyframes moveArrowDown
+  0%
+    transform: translateX(-50%) translateY(0) rotate(0deg)
+    opacity: 0
+  10%
+    opacity: 1
+  50%
+    transform: translateX(-50%) translateY(8px) rotate(0deg)
+    opacity: 1
+  95%
+    opacity: 0
+  100%
+    transform: translateX(-50%) translateY(15px) rotate(0deg)
+    opacity: 0
